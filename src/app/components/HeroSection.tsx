@@ -3,27 +3,27 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div className="bg-[#fdf7f2] min-h-[calc(100vh-500px)] px-4 md:px-8 lg:px-16 py-8 md:py-12">
+    <div className="bg-[#fdf7f2]  pl-8 pr-8 min-h-[calc(100vh-500px)] max-h-[100vh] mt-10 px-4 md:px-8 lg:px-16 py-8 md:py-12">
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center space-x-2">
-          <div className="flex -space-x-2">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="w-10 h-10 rounded-full border-2 border-white overflow-hidden">
-                <Image
-                  src={`/images/volunteer-${i}.jpg`}
-                  alt={`Volunteer ${i}`}
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            ))}
-          </div>
-          <span className="text-xl font-medium">300+ Volunteers</span>
-        </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            <div className="flex items-center space-x-2">
+              <div className="flex -space-x-2">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white overflow-hidden">
+                    <Image
+                      src={`/images/volunteer-${i}.jpg`}
+                      alt={`Volunteer ${i}`}
+                      width={40}
+                      height={40}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+              <span className="text-xl font-medium">300+ Volunteers</span>
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight">
               Together, We Have the Power to Change Lives.
             </h1>
